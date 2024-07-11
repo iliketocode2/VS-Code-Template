@@ -1,3 +1,15 @@
+<!--
+HTML (HyperText Markup Language) File
+-------------------------------------
+This file contains the structure and content of a web page. It uses tags to define 
+elements like headings, paragraphs, links, images, and more. CSS styles and JavaScript 
+enhance HTML.
+
+Key concepts:
+- Tags: Used to define different elements (e.g., <p> for paragraphs)
+- Attributes: Provide additional information about elements (e.g., class, id)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +17,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <link rel="stylesheet" href="pyscript-custom.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <button id="helloButton">Click Me</button>
 
+    <div class="mainContent">
+        <h1>Hello, World!</h1>
+        <button id="helloButton">Click Me!</button>
+    </div>
+    <div class="mainContent">
+        <h1 id="changeContent">0</h1>
+        <button id="pythonButton">Click Me Too!</button>
+    </div>
+    <!-- important to load js after pyscript (in this case for terminal scroll)-->
+    <py-script src="./main.py"></py-script>
     <script src="script.js"></script>
 </body>
 </html>

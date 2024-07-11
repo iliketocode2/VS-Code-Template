@@ -1,8 +1,23 @@
+/*
+CSS (Cascading Style Sheets) File
+---------------------------------
+This file controls how the content should look, including colors, fonts, spacing, and 
+positioning.
+
+Key concepts:
+- Selectors: Target specific HTML elements to style (e.g #, ., or element tag names)
+- Properties: Define what aspect of the element to style (e.g., color, font-size)
+- Values: Specify how the property should be styled
+- Cascading: Styles can inherit and override each other based on specificity
+*/
+
+/*https://www.google.com/search?q=color+picker&rlz=1C1ONGR_enUS969US969&oq=color+picker&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTINCAEQABiDARixAxiABDIHCAIQABiABDIKCAMQABixAxiABDIKCAQQABixAxiABDIHCAUQABiABDIGCAYQRRhBMgYIBxAFGEDSAQgxMzQ5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8*/
+/*^ this is a link to google's color picker*/
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
@@ -10,6 +25,17 @@ body {
 
 h1 {
     color: #333;
+}
+
+.mainContent{
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color:#a1b1c9;
 }
 
 button {
@@ -25,4 +51,9 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* pyscript-custom.css */
+.py-terminal {
+    max-height: 100px !important;
 }
