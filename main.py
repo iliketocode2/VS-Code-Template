@@ -24,6 +24,6 @@ def a_cool_function(event):
     print('Changing the number to:', new_content)
     Element('changeContent').write(str(new_content))
     new_content += 1
-    window.setTimeout(window.scrollTerminalToBottom, 0)
+    window.setTimeout(window.scrollTerminalToBottom, 0) #this calls the javascript function scrollTerminalToBottom
 
 Element('pythonButton').element.onclick = a_cool_function
